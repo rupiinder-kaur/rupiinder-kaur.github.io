@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Rupinder Kaur — Researcher at IIT Ropar." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Contact — Rupinder Kaur</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">RK</span>
+        <span class="brand-text">Rupinder&nbsp;Kaur</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="teaching.html" class="nav-link">Teaching</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="section-eyebrow" data-animate="fade-up">06 — Contact</p>
+        <h1 class="page-title" data-animate="fade-up">Let's connect</h1>
+        <p class="page-sub" data-animate="fade-up" data-delay="80">For collaborations, talks, or student queries — I'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info" data-animate="fade-up">
+            <div class="contact-row">
+              <i class="fa-regular fa-envelope"></i>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:rupinder.kaur@iitrpr.ac.in">rupinder.kaur@iitrpr.ac.in</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <p class="contact-label">Office</p>
+                <p>Indian Institute of Technology Ropar,<br />Rupnagar, Punjab, 140001, India</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <p class="contact-label">Profiles</p>
+                <p class="profile-links">
+                  <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> ·
+                  <a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a> ·
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> ·
+                  <a href="https://github.com/rupiinder-kaur" target="_blank" rel="noopener">GitHub</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" data-animate="fade-up" data-delay="120"
+                action="https://formsubmit.co/rupinder.kaur@iitrpr.ac.in" method="POST"
+                onsubmit="return handleContactSubmit(event)">
+            <div class="form-row">
+              <label><span>Name</span><input type="text" name="name" required placeholder="Your full name" /></label>
+              <label><span>Email</span><input type="email" name="email" required placeholder="you@example.com" /></label>
+            </div>
+            <label><span>Subject</span><input type="text" name="subject" required placeholder="What's this about?" /></label>
+            <label><span>Message</span><textarea name="message" rows="5" required placeholder="Write your message..."></textarea></label>
+            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+            <p class="form-note" id="formNote" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">RK</span>
+        <p>Rupinder Kaur · IIT Ropar</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="footer-socials" aria-label="Social">
+        <li><a href="mailto:rupinder.kaur@iitrpr.ac.in" aria-label="Email"><i class="fa-regular fa-envelope"></i></a></li>
+        <li><a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a></li>
+        <li><a href="https://github.com/rupiinder-kaur" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      </ul>
+      <p class="copyright">&copy; <span id="year"></span> Rupinder Kaur. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
