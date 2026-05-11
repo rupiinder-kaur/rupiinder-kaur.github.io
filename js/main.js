@@ -55,11 +55,11 @@
 
   const typed = $('#typed');
   const phrases = [
-    'Researcher \u00b7 IIT Ropar',
-    'PhD Scholar',
-    'Machine Learning Enthusiast',
-    'Data Science Practitioner',
-    'Educator & Mentor'
+    'PhD Scholar \u00b7 IIT Ropar',
+    'Machine Learning and Vision',
+    'Thermal and RGB Image Analysis',
+    'Mathematical Foundations for ML',
+    'Applied Data Research'
   ];
   if (typed && !prefersReduced) {
     let pi = 0, ci = 0, deleting = false;
