@@ -1,11 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Thermal video analysis icon">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7c5cff"/>
-      <stop offset="100%" stop-color="#22d3ee"/>
+    <linearGradient id="frame" x1="8" y1="10" x2="56" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.52" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#f97316"/>
     </linearGradient>
+    <radialGradient id="heat" cx="0.35" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fff7ad"/>
+      <stop offset="0.32" stop-color="#fb923c"/>
+      <stop offset="0.62" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </radialGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="url(#g)"/>
-  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
-        font-family="Space Grotesk, Inter, sans-serif" font-size="30" font-weight="800" fill="#fff">RK</text>
+  <rect width="64" height="64" rx="14" fill="#07111f"/>
+  <rect x="8" y="13" width="48" height="38" rx="8" fill="#101827" stroke="url(#frame)" stroke-width="3"/>
+  <path d="M14 20h5v5h-5zm0 10h5v5h-5zm0 10h5v5h-5zm31-20h5v5h-5zm0 10h5v5h-5zm0 10h5v5h-5z" fill="#22d3ee" opacity=".9"/>
+  <circle cx="32" cy="32" r="13" fill="url(#heat)"/>
+  <path d="M30 24l13 8-13 8z" fill="#fff" opacity=".94"/>
+  <path d="M22 48c8-4 16-4 24 0" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" opacity=".7"/>
 </svg>

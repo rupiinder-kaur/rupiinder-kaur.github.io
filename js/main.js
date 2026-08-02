@@ -56,10 +56,10 @@
   const typed = $('#typed');
   const phrases = [
     'PhD Scholar \u00b7 IIT Ropar',
-    'Machine Learning and Vision',
-    'Thermal and RGB Image Analysis',
-    'Mathematical Foundations for ML',
-    'Applied Data Research'
+    'Deep Learning for Vision',
+    'Thermal Video Analysis',
+    'RGB and Thermal Imaging',
+    'Applied Multimodal AI'
   ];
   if (typed && !prefersReduced) {
     let pi = 0, ci = 0, deleting = false;
@@ -145,13 +145,4 @@
     });
   });
 
-  window.handleContactSubmit = (e) => {
-    const note = $('#formNote');
-    if (note) {
-      note.hidden = false;
-      note.className = 'form-note ok';
-      note.textContent = "Thanks! Your message is on its way \u2014 you'll hear back soon.";
-    }
-    return true;
-  };
 })();

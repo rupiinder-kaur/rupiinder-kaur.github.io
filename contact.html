@@ -28,10 +28,9 @@
       </a>
       <nav class="nav-links" id="navLinks" aria-label="Primary">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">Profile</a>
+        <a href="about.html" class="nav-link">Education</a>
         <a href="research.html" class="nav-link">Projects</a>
         <a href="publications.html" class="nav-link">Publications</a>
-        <a href="experience.html" class="nav-link">Journey</a>
         <a href="teaching.html" class="nav-link">Achievements</a>
         <a href="contact.html" class="nav-link active">Contact</a>
       </nav>
@@ -49,15 +48,15 @@
   <main>
     <section class="page-header">
       <div class="container">
-        <p class="section-eyebrow" data-animate="fade-up">06 - Contact</p>
-        <h1 class="page-title" data-animate="fade-up">Reach out for academic conversations</h1>
-        <p class="page-sub" data-animate="fade-up" data-delay="80">For collaborations, project discussions, and profile inquiries.</p>
+        <p class="section-eyebrow" data-animate="fade-up">Contact</p>
+        <h1 class="page-title" data-animate="fade-up">Academic Contact and Profiles</h1>
+        <p class="page-sub" data-animate="fade-up" data-delay="80">Contact details, institutional address, and academic profile links.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="contact-grid">
+        <div class="contact-grid contact-grid-single">
           <div class="contact-info" data-animate="fade-up">
             <div class="contact-row">
               <i class="fa-regular fa-envelope"></i>
@@ -76,8 +75,8 @@
             <div class="contact-row">
               <i class="fa-solid fa-location-dot"></i>
               <div>
-                <p class="contact-label">Institution</p>
-                <p>Indian Institute of Technology Ropar, Rupnagar, Punjab, India</p>
+                <p class="contact-label">Address</p>
+                <p>S Ramanujan Block, IIT Ropar, Main Campus, Rupnagar, 140001 Punjab, India.</p>
               </div>
             </div>
             <div class="contact-row">
@@ -85,26 +84,14 @@
               <div>
                 <p class="contact-label">Profiles</p>
                 <p class="profile-links">
-                  <a href="https://www.linkedin.com/in/rupinder-kaur-432367361/" target="_blank" rel="noopener">LinkedIn</a> ·
-                  <a href="https://github.com/rupiinder-kaur" target="_blank" rel="noopener">GitHub</a> ·
+                  <a href="https://www.linkedin.com/in/rupinder-kaur-432367361/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+                  <a href="https://scholar.google.com/citations?hl=en&amp;user=rMJRRw0AAAAJ" target="_blank" rel="noopener">Google Scholar</a> &middot;
+                  <a href="https://github.com/rupiinder-kaur" target="_blank" rel="noopener">GitHub</a> &middot;
                   <a href="docs/CV.pdf" target="_blank" rel="noopener">CV</a>
                 </p>
               </div>
             </div>
           </div>
-
-          <form class="contact-form" data-animate="fade-up" data-delay="120"
-                action="https://formsubmit.co/rupinder.kaur@iitrpr.ac.in" method="POST"
-                onsubmit="return handleContactSubmit(event)">
-            <div class="form-row">
-              <label><span>Name</span><input type="text" name="name" required placeholder="Your full name" /></label>
-              <label><span>Email</span><input type="email" name="email" required placeholder="you@example.com" /></label>
-            </div>
-            <label><span>Subject</span><input type="text" name="subject" required placeholder="Research, project, or academic query" /></label>
-            <label><span>Message</span><textarea name="message" rows="5" required placeholder="Write your message..."></textarea></label>
-            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
-            <p class="form-note" id="formNote" hidden></p>
-          </form>
         </div>
       </div>
     </section>
@@ -112,26 +99,50 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="brand-mark">RK</span>
-        <p>Rupinder Kaur · IIT Ropar</p>
+      <div class="footer-main">
+        <div class="footer-intro">
+          <a href="index.html" class="footer-brand">
+            <span class="footer-brand-text">
+              <strong>Rupinder Kaur</strong>
+              <small>PhD Scholar, IIT Ropar</small>
+            </span>
+          </a>
+          <p>Applied deep learning and computer vision for thermal video, RGB imaging, and multimodal analysis.</p>
+          <address class="footer-address">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>S Ramanujan Block, IIT Ropar, Main Campus, Rupnagar, 140001 Punjab, India.</span>
+          </address>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <p class="footer-heading">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Education</a></li>
+            <li><a href="research.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="teaching.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <p class="footer-heading">Connect</p>
+          <ul class="footer-socials" aria-label="Academic and social profiles">
+            <li><a href="mailto:rupinder.23csz0008@iitrpr.ac.in"><i class="fa-regular fa-envelope"></i><span>rupinder.23csz0008@iitrpr.ac.in</span></a></li>
+            <li><a href="https://scholar.google.com/citations?hl=en&amp;user=rMJRRw0AAAAJ" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i><span>Google Scholar</span></a></li>
+            <li><a href="https://www.linkedin.com/in/rupinder-kaur-432367361/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></li>
+            <li><a href="https://github.com/rupiinder-kaur" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
+            <li><a href="docs/CV.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i><span>CV</span></a></li>
+          </ul>
+        </div>
       </div>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Profile</a></li>
-        <li><a href="research.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="experience.html">Journey</a></li>
-        <li><a href="teaching.html">Achievements</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="footer-socials" aria-label="Social">
-        <li><a href="mailto:rupinder.kaur@iitrpr.ac.in" aria-label="Email"><i class="fa-regular fa-envelope"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/rupinder-kaur-432367361/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/rupiinder-kaur" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="docs/CV.pdf" target="_blank" rel="noopener" aria-label="CV"><i class="fa-regular fa-file-lines"></i></a></li>
-      </ul>
-      <p class="copyright">&copy; <span id="year"></span> Rupinder Kaur. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; <span id="year"></span> Rupinder Kaur. All rights reserved.</p>
+        <div class="footer-tags" aria-label="Research themes">
+          <span>Deep Learning</span>
+          <span>Computer Vision</span>
+          <span>Thermal Video</span>
+        </div>
+      </div>
     </div>
   </footer>
 
